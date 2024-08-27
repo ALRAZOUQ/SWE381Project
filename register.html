@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!--                                                    DFTD -->
+            <form id="login-form" class="form" method="POST" action="----">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <!--                                                           DFTD -->
+            <form id="signup-form" class="form hidden" method="post" action="-------">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="toggle-form" id="signup-footer">
+                <p>Don't have an account? <span id="signup-link">Sign Up</span></p>
+            </div>
+
+            <div class="toggle-form hidden" id="login-footer">
+                <p>Already have an account? <span id="login-link">Login</span></p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="register.js"></script>
+
+</body>
+
+</html>

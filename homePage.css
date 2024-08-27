@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 30px;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+
+    border-radius: 4px;
+    padding: 6px 4px;
+    background-color: #555;
+    transition: 0.1s;
+
+}
+
+nav ul li:hover {
+    background-color: #444;
+    scale: 1.2;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search bar */
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #444;
+}
+
+/* Question cards */
+.question-card {
+    text-decoration: none;
+    /* Remove default underline */
+    color: inherit;
+    /* Inherit color from parent */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+    transition: 0.1s;
+
+}
+
+.question-card>div:hover {
+    scale: 1.01;
+}
+
+.question-card>div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: wrap;
+}
+
+.question-footer {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.question-rating, .question-comments, .question-answers {
+
+    margin: 0px 20px;
+}

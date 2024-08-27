@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="myAccount.css">
+</head>
+
+<body>
+    <!-- DFTD = Don't Forget To Do-->
+    <!-- when u finsh one of them write= after it directly without space  like this: DFTD= -->
+    <!-- this helps to revise  -->
+
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">
+            <a><img src="logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="search-bar">
+            <!-- DFTD -->
+            <form action="---" method="get">
+                <input required name="search-bar" type="text" placeholder="Search questions...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <ul>
+            <!-- DFTD -->
+            <li><a href="#">log out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container">
+        <div class="write-a-question">
+            <h2>Add a new question:</h2>
+            <!-- DFTD -->
+            <form action="" method="get" class="new-question">
+                <input required type="text" placeholder="question title...">
+                <textarea required name="quesion-describtion" cols="30" rows="10" class="quesion-describtion"
+                    placeholder="write a meaning describtion..."></textarea>
+                <button type="submit">add the new question</button>
+            </form>
+        </div>
+
+        <!-- we must display 10 quesions for each, I add 3 for each as an example -->
+
+        <!-- 1-Recent questions -->
+        <section id="your-questions">
+            <h2>Your Questions</h2>
+            <div>
+                <form action="----" method="post">
+                    <input class="search-in-your-questions" name="search-in-your-questions" type="text"
+                        placeholder="search in your quesions...">
+                </form>
+            </div>
+
+            <!-- for all href in these questions : DFTD -->
+            <div href="question-details.html" class="question-card">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <div href="question-details.html" class="question-card">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <!-- maybe need to change this DFTD -->
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div href="question-details.html" class="question-card">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+            <!-- More question cards -->
+        </section>
+        <div class="pagination">
+            <button class="prev-question-page">prev</button>
+            <div class="page-numbers">
+                <!-- to keep page-numbers in the middle if the ... is shown -->
+                <span>&nbsp;&nbsp;&nbsp;</span>
+
+
+                <span class="a-question-page-number" href="">1</span>
+                <span class="a-question-page-number " href="">2</span>
+                <span class="a-question-page-number" href="">3</span>
+                <span class="a-question-page-number selected-question-page" href="">4</span>
+                <span class="a-question-page-number" href="">5</span>
+                <!-- DFTD -->
+                <!-- must be handeld by js or php idk -->
+
+                <span class="still-there-is-pages">...</span>
+
+            </div>
+            <button class="next-question-page">next</button>
+        </div>
+        <br>
+        <br>
+        <!-- Top questions -->
+        <section id="your-answers">
+            <h2>Your Answers</h2>
+            <!-- for all href in top questions : DFTD -->
+
+            <div>
+                <form action="----" method="post">
+                    <input class="search-in-your-answers" name="search-in-your-answers" type="text"
+                        placeholder="search in your answers...">
+                </form>
+            </div>
+
+            <!-- for all href in these questions : DFTD -->
+
+            <div href="question-details.html" class="question-card">
+                <!--answers card have the same css of question card-->
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div href="question-details.html" class="question-card">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div href="question-details.html" class="question-card">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+
+                        <div>
+                            <button type="submit" class="delate-edit-buttons"><i
+                                    class="delate fas fa-trash-alt"></i></button><br>
+                            <button type="submit" class="delate-edit-buttons"><i class="edit fas fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+                </div>
+            </div>
+            <!-- More answer cards -->
+        </section>
+        <div class="pagination">
+            <button class="prev-answer-page">prev</button>
+            <div class="page-numbers">
+                <!-- to keep page-numbers in the middle if the ... is shown -->
+                <span>&nbsp;&nbsp;&nbsp;</span>
+
+
+                <span class="an-answer-page-number" href="">1</span><span
+                    class="an-answer-page-number selected-answer-page" href="">2</span><span
+                    class="an-answer-page-number" href="">3</span><span class="an-answer-page-number"
+                    href="">4</span><span class="an-answer-page-number" href="">5</span>
+                <!-- DFTD -->
+                <!-- must be handeld by js or php idk -->
+
+                <span class="still-there-is-pages">...</span>
+
+            </div>
+            <button class="next-answer-page">next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; StackOverflow-project
+    </footer>
+    <script src="myAccount.js"></script>
+</body>
+
+</html>

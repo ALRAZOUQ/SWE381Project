@@ -1,0 +1,240 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 30px;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+
+    border-radius: 4px;
+    padding: 6px 4px;
+    background-color: #555;
+    transition: 0.1s;
+
+}
+
+nav ul li:hover {
+    background-color: #444;
+    scale: 1.2;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search bar */
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #444;
+}
+
+/* Question cards */
+.question-card {
+
+    color: inherit;
+    /* Inherit color from parent */
+
+
+}
+
+
+
+.question-card>div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: wrap;
+}
+
+.question-footer {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.question-rating, .question-comments, .question-answers {
+
+    margin: 0px 20px;
+}
+
+
+.delate, .edit {
+    color: #999;
+
+    width: 15px;
+
+}
+
+.delate-edit-buttons {
+    border: none;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 1px;
+    font-size: 60%;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
+
+.delate-edit-buttons:hover {
+    box-shadow: 2px 2px 4px rgba(110, 110, 110, 0.2);
+}
+
+.search-in-your-questions, .search-in-your-answers {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.a-question-page-number, .an-answer-page-number {
+
+    margin: 2px 10px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #eee;
+    border-radius: 111px;
+
+    display: inline-block;
+    width: 24px;
+
+    padding: 3.5px 0;
+    aspect-ratio: 1/1;
+    text-align: center;
+
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+}
+
+.prev-question-page, .next-question-page, .next-answer-page, .prev-answer-page {
+    padding: 0 3%;
+    border: none;
+    border-radius: 15px;
+    width: 20%;
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+}
+
+.selected-question-page, .selected-answer-page {
+    background-color: #f48024;
+
+}
+
+.prev-question-page:hover, .next-question-page:hover, .prev-answer-page:hover, .next-answer-page:hover {
+    background-color: #f48024;
+
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.a-question-page-number:hover, .an-answer-page-number:hover {
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.new-question {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-question input, .new-question textarea, .new-question button {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: fit-content;
+    padding: 5px;
+}
+
+.new-question button {
+    background-color: #f48224ee;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.new-question button:hover {
+    scale: 1.02;
+}

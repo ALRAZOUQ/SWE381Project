@@ -1,0 +1,211 @@
+<!-- 
+    we need tp change the 
+    -nav bar [My account button]
+    - rate/comment/answer buttons
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackOverflow-Like Web App</title>
+    <link rel="stylesheet" href="questionPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- DFTD = Don't Forget To Do-->
+    <!-- when u finsh one of them write= after it directly without space  like this: DFTD= -->
+    <!-- this helps to revise  -->
+
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">
+            <a><img src="logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="search-bar">
+            <!-- must add attributes for this form DFTD  -->
+            <form>
+                <input required type="text" placeholder="Search questions...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <ul>
+            <li><i class="home fas fa-home"></i> </li>
+            <li><i class="account fas fa-user-circle"></i></li>
+            <li><a href="register.html">Sign Up/login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container">
+
+
+        <!-- we must display 10 quesions for each, I add 3 for each as an example -->
+
+
+
+
+
+        <div class="question-card-with-buttones">
+            <div class="question-header">
+                <h1>Lorem ipsum dolor sit amet consectetur<span>#<span class="post-id">343871</span></span></h1>
+                <div class="question-footer">
+                    <h6 class="question-author">SAAD alrqzouq</h6>
+                    <h6 class="question-rating">Rate: 4.5 </h6>
+                    <h6 class="question-comments">comments: 70 </h6>
+                    <h6 class="question-answers">answers: 397 </h6>
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis libero debitis
+                itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias id labore
+                amet, voluptatum officiis molestias facere!</p>
+            <div class="interaction-buttons">
+                <!-- idk if this is the best way to make it, but id of rating buttones must = the id of the post -->
+                <div class="rating-buttons" id="343871">
+                    <span id="star-1" class="fa fa-star"></span>
+                    <span id="star-2" class="fa fa-star"></span>
+                    <span id="star-3" class="fa fa-star"></span>
+                    <span id="star-4" class="fa fa-star"></span>
+                    <span id="star-5" class="fa fa-star"></span>
+                </div>
+                <!-- DFTD -->
+                <button class="add-a-comment">Add a comment</button>
+            </div>
+
+
+        </div>
+        <h2 style="font-weight: lighter; margin-top: 30px;">3 Answers</h2>
+
+        <!-- ------------ ANSWERS SECTION STARTS HERE ------------ -->
+
+        <section class="answers">
+            <div class="question-card-with-buttones">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                        <div class="question-footer">
+                            <h6>SAAD alrqzouq</h6>
+                            <h6 class="question-rating">Rate: 4.5 </h6>
+                            <h6 class="question-comments">comments: 70 </h6>
+                            <h6 class="question-answers">answers: 397 </h6>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis
+                        libero
+                        debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias
+                        id
+                        labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                </div>
+
+
+
+        </section>
+        <section class="answers">
+            <div href="question-details.html" class="question-card-with-buttones">
+                <div>
+                    <div class="question-header">
+                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                        <h6>SAAD alrqzouq</h6>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis
+                        libero
+                        debitis
+                        itaque exercitationem fuga odit similique minus, dicta distinctio doloremque alias
+                        id
+                        labore
+                        amet, voluptatum officiis molestias facere!</p>
+                    <hr>
+                    <div class="question-footer">
+                        <h6 class="question-rating">Rate: 4.5 </h6>
+                        <h6 class="question-comments">comments: 70 </h6>
+                        <h6 class="question-answers">answers: 397 </h6>
+
+                    </div>
+
+                </div>
+                <div href="question-details.html" class="question-card-with-buttones">
+                    <div>
+                        <div class="question-header">
+                            <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                            <h6>SAAD alrqzouq</h6>
+                        </div>
+                        <hr>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam adipisci facilis
+                            libero debitis
+                            itaque exercitationem fuga odit similique minus, dicta distinctio doloremque
+                            alias id labore
+                            amet, voluptatum officiis molestias facere!</p>
+                        <hr>
+                        <div class="question-footer">
+                            <h6 class="question-rating">Rate: <span class="ratingis">4.5</span> </h6>
+                            <h6 class="question-comments">comments: 70 </h6>
+                            <h6 class="question-answers">answers: 397 </h6>
+
+                        </div>
+                        <br><br><br>
+                        <h2 style="text-align: center;">The Answers</h2>
+                        <section class="answers">
+                            <div href="question-details.html" class="question-card-with-buttones">
+                                <div>
+                                    <div class="question-header">
+                                        <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                                        <h6>SAAD alrqzouq</h6>
+                                    </div>
+                                    <hr>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+                                        adipisci facilis
+                                        libero
+                                        debitis
+                                        itaque exercitationem fuga odit similique minus, dicta distinctio
+                                        doloremque alias
+                                        id
+                                        labore
+                                        amet, voluptatum officiis molestias facere!</p>
+                                    <hr>
+                                    <div class="question-footer">
+                                        <h6 class="question-rating">Rate: 4.5 </h6>
+                                        <h6 class="question-comments">comments: 70 </h6>
+                                        <h6 class="question-answers">answers: 397 </h6>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+        </section>
+
+
+    </div>
+
+    </section>
+
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; StackOverflow-project
+    </footer>
+    <script src="questionPage.js"></script>
+</body>
+
+</html>
